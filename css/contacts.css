@@ -1,0 +1,74 @@
+body {
+    max-width: 980px;
+    min-width: 380px;
+    margin: auto;
+}
+.container nav  .navbar-brand{
+    font-weight: bold;
+}
+.container nav a span{
+    font-weight: normal;
+    font-size: 15px; 
+}
+body .container .btn-group{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.card {
+    height: 100%;
+}
+
+/* Footer start*/
+footer .icon-sites a{
+    text-decoration: none;  
+    color: #212529;
+    font-weight: bold;
+    font-size: 50px;
+} 
+footer li a, footer li a:hover{
+    text-decoration: none;   
+    color: #212529; 
+}
+footer li a:hover{
+    text-decoration: none;   
+    color: #212529;
+    font-weight: 600; 
+}
+#other_sites img{
+    height: 50px;
+}
+footer {
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+}
+@media(min-width:550px){
+    footer{
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+@media(min-width:650px){
+    footer{
+        vertical-align: middle;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr; 
+    }
+}
+footer li, footer div.icon-sites{
+    list-style: none;
+    padding: 5px;
+}
+footer div.icon-sites, #footer_menu, #footer_contacts{
+    padding: 7px;
+}
+/* Footer end*/
+h1{
+    font-size: 25px;
+    text-align: center;
+}
+form{
+    margin: auto;
+    width: 70%;
+}

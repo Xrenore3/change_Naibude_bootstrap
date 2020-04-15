@@ -11,8 +11,7 @@
         <header class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
-                    NaiBude <br>
-                    <span>інтернет магазин опалювальної техніки </span>
+                    НайBude
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,13 +27,17 @@
                             <a class="nav-link" href="#">Продукти</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Контакти</a>
+                            <a class="nav-link" href="contacts.html">Контакти</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+
+                    <div>
+                        <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
+                          <i class="fas fa-shopping-cart"></i>
+                            Cart<span id="cart-badge" class="badge badge-light"></span>
+                        </a>
+                    </div>
+
                 </div>
             </nav>
             <div class="btn-group container" role="group" aria-label="Basic example">
@@ -62,45 +65,129 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <h2>Газові котли</h2>
-            <div class="row">
-                <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/product_bosch.png" class="card-img-top" alt="Bosch gaz 4000">
-                    <div class="card-body">
-                        <h5 class="card-title">Bosch Gaz 4000</h5>
-                        <p class="card-text">Газовий двоконтурний котел потужністю 24кВт</p>
-                        <a href="#" class="btn btn-primary">Купити</a>
-                    </div>
-                </article>
-                <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/product_bosch.png" class="card-img-top" alt="Bosch gaz 4000">
-                    <div class="card-body">
-                        <h5 class="card-title">Bosch Gaz 4000</h5>
-                        <p class="card-text">Газовий двоконтурний котел потужністю 24кВт</p>
-                        <a href="#" class="btn btn-primary">Купити</a>
-                    </div>
-                </article>
-                <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/product_bosch.png" class="card-img-top" alt="Bosch gaz 4000">
-                    <div class="card-body">
-                        <h5 class="card-title">Bosch Gaz 4000</h5>
-                        <p class="card-text">Газовий двоконтурний котел потужністю 24кВт</p>
-                        <a href="#" class="btn btn-primary">Купити</a>
-                    </div>
-                </article>
-                <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/product_bosch.png" class="card-img-top" alt="Bosch gaz 4000">
-                    <div class="card-body">
-                        <h5 class="card-title">Bosch Gaz 4000</h5>
-                        <p class="card-text">Газовий двоконтурний котел потужністю 24кВт</p>
-                        <a href="#" class="btn btn-primary">Купити</a>
-                    </div>
-                </article>
-            </div>
+
+            <section>
+                <h2 id="products">Товари</h2>
+                <div class="row products-container">
+                   <!--Products are dynamically generated here-->
+                </div>
+            </section>
+            
         </main>
-        <footer></footer>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <footer class="container">
+            <div class="icon-sites">
+                <p class="shop_name">
+                    <a href="index.html">
+                        НайBude
+                    </a>
+                    
+                </p>
+                <div id="other_sites" >
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/icon_instagram.jpg" alt="icon_instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="img/icon_facebook.jpg" alt="icon_facebook.jpg">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="img/icon_youtube.jpg" alt="youtube.jpg">
+                    </a>
+                    <a href="https://www.google.com/" target="_blank">
+                        <img src="img/icon_google.jpg" alt="icon_google">
+                    </a>
+                </div>
+            </div>
+            <ul id="footer_menu">
+                <li>
+                    <a href="index.html">Головна</a>
+                </li>
+                <li>
+                    <a href="#about_us">Про нас</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакти</a>
+                </li>
+                <li>
+                    <a href="#news">Статті</a>
+                </li>
+            </ul>
+            <ul id="footer_contacts"> 
+                <li>+38-(097)-777-77-77</li>
+                <li>+38-(097)-777-77-77</li>
+                <li>+38-(097)-777-77-77</li>
+                <li>info@naybude.com</li>
+            </ul>
+        </footer>
+
+
+        <!-- Modal Product Info -->
+    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img class="card-img-top" src="" alt="">
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary buy" data-id="id">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal Cart -->
+      <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartLabel">Cart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="cart-product-list-container"></div>
+              <hr>
+              <div class="container">
+                <form class="form-contacts">
+                  <div class="form-group row">
+                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                    <input class="form-control col-8" type="text" id="client-name" required>
+                  </div>
+                  <div class="form-group row">
+                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                    <input class="form-control col-8" type="email" id="client-email" required>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary order">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+        <script async src="js/alert-window.js"></script>
+        <script defer src="js/products-service.js"></script>
+        <script defer src="js/cart.js"></script>
+        <script defer src="js/product-list.js"></script>    
+        <script defer src="js/index.js"></script>
     </body>
 </html>
