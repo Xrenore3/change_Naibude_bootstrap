@@ -10,7 +10,7 @@
     <body>
         <header class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     НайBude
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,9 +19,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="index.html">
                                 Головна <span class="sr-only">(current)</span>
                             </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_us">Про нас</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#products">Продукти</a>
@@ -41,9 +44,9 @@
                 </div>
             </nav>
             <div class="btn-group container" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Газові котли</button>
-                <button type="button" class="btn btn-secondary">Електричні котли</button>
-                <button type="button" class="btn btn-secondary">Котли на твердому паливі</button>
+                <a type="button" class="btn btn-secondary" href="#1-anchor">Газові котли</a>
+                <a type="button" class="btn btn-secondary" href="#5-anchor">Електричні котли</a>
+                <a type="button" class="btn btn-secondary" href="#8-anchor">Котли на твердому паливі</a>
             </div>
         </header>
         <main class="container">
@@ -53,20 +56,19 @@
                         <img src="img/banner.jpg" class="d-block w-100" alt="Банер електричний котел">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/banner.jpg" class="d-block w-100" alt="...">
+                        <img src="img/banner-ariston-kotly-1.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
             </div>
-
             <section>
                 <h2 id="products">Товари</h2>
                 <div class="row products-container">
                    <!--Products are dynamically generated here-->
                 </div>
             </section>
-
+            
             <section class="about-us">
-                <h2>Про нас</h2>
+                <h2 id="about_us">Про нас</h2>
                 <p>Інтернет - магазин Най Bude - не просто торгова площадка в інтернеті. У нас є своє виробництво, склад і магазин, в якому жителі Львова можуть подивитися котел, водонагрівач, конвектор, радіатор або підібрати оптимальний твердопаливний котел. Проектний і монтажний відділ допоможуть прорахувати потрібне обладнання та змонтувати всю систему у вас вдома (поки тільки для жителів Львова). Ми добре розбираємося в техніці, яку продаємо - зручна фільтрація за характеристиками допоможе вам вибрати саме те, що потрібно.
 
                     Ми продаємо тільки "біле" офіційне обладнання, на яке надається фірмова гарантія від виробника. У кожного розділу інтернет - магазину Теплота є провідний менеджер, який відповість на всі виниклі питання і допоможе підібрати найкращу техніку і матеріали. Доставляємо покупку жителям Львова своїм транспортом, по Україні службами перевезень. У магазині Теплота є можливість оплатити покупку будь-яким способом, навіть при отриманні. Кредит на техніку - не проблема, ми співпрацюємо з банками України, і ви отримаєте найвигідніший кредит на опалення.
@@ -109,9 +111,6 @@
                 </li>
                 <li>
                     <a href="contacts.html">Контакти</a>
-                </li>
-                <li>
-                    <a href="#news">Статті</a>
                 </li>
             </ul>
             <ul id="footer_contacts"> 

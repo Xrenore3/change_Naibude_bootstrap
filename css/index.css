@@ -1,3 +1,10 @@
+.alert {
+    position: fixed;
+    top: 50px;
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
 body {
     max-width: 980px;
     min-width: 380px;
@@ -45,8 +52,10 @@ footer li a:hover{
 #other_sites img{
     height: 50px;
 }
-footer {
+.container footer {
     background-color:  rgb(248, 249, 250);
+    padding-left: 0;
+    padding-right: 0;
     padding-top:15px;
     padding-bottom:15px;
     text-align: center;
@@ -90,10 +99,6 @@ footer div.icon-sites, #footer_menu, #footer_contacts{
     border-color: #e89d1d;
 }
 .btn-info:hover, .btn-info:active, .btn-info:focus {
-    background-color: #bb8324;
-    border-color: #bb8324;
-}
-.btn-info:focus  {
     background-color: #bb8324;
     border-color: #bb8324;
 }

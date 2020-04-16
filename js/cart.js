@@ -89,7 +89,7 @@ class Cart {
   }
   order(ev) {
     if (this.cartLength() === 0) {
-      window.showAlert('Please choose products to order', false);
+      window.showAlert('Будь ласка, оберіть товар', false);
       return;
     }    
     const form = this.cartContainer.querySelector('.form-contacts');
@@ -119,12 +119,12 @@ class Cart {
           this.saveCart();
           this.updateBadge();
           this.renderCart();
-          window.showAlert('Thank you! ' + responseText);
+          window.showAlert('Дякуємо! ' + responseText);
           this.cartContainer.querySelector('.btn-close').click();
         })
         .catch(error => showAlert('There is an error: ' + error, false));
     } else {
-      window.showAlert('Please fill form correctly', false);
+      window.showAlert('Будь ласка, введіть коректні дані', false);
     }
   }
 }

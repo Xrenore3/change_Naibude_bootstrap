@@ -82,3 +82,12 @@ form{
     margin: auto;
     width: 70%;
 }
+.btn-primary {
+    background-color: #828486;
+    border-color: #828486;
+}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:visited {
+    background-color: #424344;
+    border-color: #424344;
+
+}

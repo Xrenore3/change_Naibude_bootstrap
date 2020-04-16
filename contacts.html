@@ -10,7 +10,7 @@
     <body>
         <header class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     НайBude
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,51 +24,43 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Продукти</a>
+                            <a class="nav-link" href="index.html#about_us">Про нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Контакти</a>
+                            <a class="nav-link" href="index.html#products">Продукти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакти</a>
                         </li>
                     </ul>
-
-                    <div>
-                        <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
-                          <i class="fas fa-shopping-cart"></i>
-                            Корзина<span id="cart-badge" class="badge badge-light"></span>
-                        </a>
-                    </div>
-
                 </div>
             </nav>
             <div class="btn-group container" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Газові котли</button>
-                <button type="button" class="btn btn-secondary">Електричні котли</button>
-                <button type="button" class="btn btn-secondary">Котли на твердому паливі</button>
+                <a type="button" class="btn btn-secondary" href="index.html#1-anchor">Газові котли</a>
+                <a type="button" class="btn btn-secondary" href="index.html#5-anchor">Електричні котли</a>
+                <a type="button" class="btn btn-secondary" href="index.html#8-anchor">Котли на твердому паливі</a>
             </div>
         </header>
         <main class="container">
             <h1>Зв’яжіться з нами</h1>
             <form>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Ім’я*">
+                  <input type="text" class="form-control" placeholder="Ім’я*" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="Номер телефону*">
+                    <input type="tel" class="form-control" placeholder="Номер телефону*" required>
                   </div>
                 <div class="form-group">
-                    <input type="email" class="form-control"  placeholder="name@example.com*">
+                    <input type="email" class="form-control"  placeholder="name@example.com*" required>
                 </div>
                 
                 <div class="form-group">
-                  <textarea class="form-control"  rows="5" placeholder="Повідомлення*"></textarea>
+                  <textarea class="form-control"  rows="5" placeholder="Повідомлення*" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Відправити</button>
-
-              </form>
-            
-            
+              </form>       
         </main>
-        <footer>
+        <footer class="container">
             <div class="icon-sites">
                 <p class="shop_name">
                     <a href="index.html">
@@ -96,13 +88,10 @@
                     <a href="index.html">Головна</a>
                 </li>
                 <li>
-                    <a href="#about_us">Про нас</a>
+                    <a href="index.html#about_us">Про нас</a>
                 </li>
                 <li>
                     <a href="contacts.html">Контакти</a>
-                </li>
-                <li>
-                    <a href="#news">Статті</a>
                 </li>
             </ul>
             <ul id="footer_contacts"> 
