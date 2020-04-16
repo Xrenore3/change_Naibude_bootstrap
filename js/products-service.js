@@ -5,9 +5,7 @@ class ProductsService {
     }
     async getProducts() {
         if (!this.products) {
-            const responce = await fetch('products.json');
-            const data = await responce.json();
-            this.products = data;
+            this.products = await (await fetch('products.json')).json();
         }
         return this.products;
     }

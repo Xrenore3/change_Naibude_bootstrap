@@ -21,9 +21,9 @@ class Cart {
     let total = 0;
     let cartDomSting = `<div class="container">
                 <div class="row">
-                    <div class="col-5"><strong>Product</strong></div>
-                    <div class="col-3"><strong>Price</strong></div>
-                    <div class="col-2"><strong>Quantity</strong></div>
+                    <div class="col-5"><strong>Товар</strong></div>
+                    <div class="col-3"><strong>Ціна</strong></div>
+                    <div class="col-2"><strong>Кількість</strong></div>
                 </div>`;
     for (const id in this.cart) {
       const product = await this.productService.getProductById(id);
@@ -39,8 +39,8 @@ class Cart {
     total = total.toFixed(2);
     cartDomSting += `
                 <div class="row">
-                    <div class="col-5"><strong>TOTAL</strong></div>
-                    <div class="col-3"><strong>$${total}</strong></div>
+                    <div class="col-5"><strong>Сума</strong></div>
+                    <div class="col-3"><strong>₴${total}</strong></div>
                 </div>            
         </div>`;
     this.cartContainer.querySelector(

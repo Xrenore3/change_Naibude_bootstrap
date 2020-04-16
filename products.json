@@ -1,65 +1,72 @@
 [
     {
         "id": "1",
-        "title": "Large drone",
-        "image": "product_bosch.png",
-        "description": "Large drone for most critical missions. Can carry load.",
-        "price": 499.99
+        "title": "Bosch Gaz 4000",
+        "image": "bosch_gaz_4000.jpg",
+        "description": "<strong>Потужність:</strong> 22-25кВт <br><strong>Відведення газів:</strong> димохідний <br><strong>Тип</strong>: двоконтурний",
+        "price": 15199
     },
     {
         "id": "2",
-        "title": "Small drone",
-        "image": "product_bosch.png",
-        "description": "Small drone. Can fly undetected.",
-        "price": 199.99
+        "title": "Bosch Gaz 6000",
+        "image": "bosch_gaz_6000.jpg",
+        "description": "<strong>Потужність:</strong> 22-25кВт <br><strong>Відведення газів:</strong> турбований <br><strong>Тип</strong>: двоконтурний",
+        "price": 18199
     },
     {
         "id": "3",
-        "title": "Blue drone",
-        "image": "product_bosch.png",
-        "description": "Nice-looking drone in blue color. Has built-in HD camera",
-        "price": 249.99
+        "title": "Buderus U44K",
+        "image": "buderus_U44.jpg",
+        "description": "<strong>Потужність:</strong> 22-25кВт <br><strong>Відведення газів:</strong> димохідний <br><strong>Тип</strong>: двоконтурний",
+        "price": 15999
     },
     {
         "id": "4",
-        "title": "Red drone",
-        "image": "product_bosch.png",
-        "description": "Nice-looking drone in red color",
-        "price": 229.99
+        "title": "Buderus U72K",
+        "image": "buderus_U72.jpg",
+        "description": "<strong>Потужність:</strong> 22-25кВт <br><strong>Відведення газів:</strong> турбований <br><strong>Тип</strong>: двоконтурний",
+        "price": 18999
     },
     {
         "id": "5",
-        "title": "Black gyroboard",
-        "image": "product_bosch.png",
-        "description": "Black gyroboard to match your style",
-        "price": 729.99
+        "title": "Bosch Heat Tronic 3000",
+        "image": "bosch_elec.jpg",
+        "description": "<strong>Потужність:</strong> 9кВт <br><strong>Напруга:</strong> 220 В <br><strong>Номінальний струм</strong>: 40 А",
+        "price": 16999
     },
     {
         "id": "6",
-        "title": "White gyroboard",
-        "image": "product_bosch.png",
-        "description": "White gyroboard with blue lights",
-        "price": 829.99
+        "title": "Kospel ECOL 8",
+        "image": "kospel.jpg",
+        "description": "<strong>Потужність:</strong> 8кВт <br><strong>Напруга:</strong> 220 В <br><strong>Номінальний струм</strong>: 40 А",
+        "price": 11999
     },
     {
         "id": "7",
-        "title": "Tesla Model X",
-        "image": "product_bosch.png",
-        "description": "Best crossover in the World",
-        "price": 99999.99
+        "title": "Bosch Heat Tronic 5000",
+        "image": "bosch_elec5000.jpg",
+        "description": "<strong>Потужність:</strong> 60кВт <br><strong>Напруга:</strong> 380 В <br><strong>Номінальний струм</strong>: 88 А",
+        "price": 25999
     },
     {
         "id": "8",
-        "title": "Tesla Roadster",
-        "image": "product_bosch.png",
-        "description": "Best sports car in the World",
-        "price": 249999.99
+        "title": "Atmos DC 28 S",
+        "image": "atmos.jpg",
+        "description": "<strong>Потужність:</strong> 28кВт <br><strong>Матеріал:</strong> сталь <br><strong>Процес горіння</strong>: піролізний",
+        "price": 39999
     },
     {
         "id": "9",
-        "title": "Bosch",
-        "image": "product_bosch.png",
-        "description": "The best gaz boiler",
-        "price": 459.99
+        "title": "MCE 25 HW",
+        "image": "MCE.jpg",
+        "description": "<strong>Потужність:</strong> 26кВт <br><strong>Матеріал:</strong> сталь <br><strong>Процес горіння</strong>: звичайний",
+        "price": 24999
+    },
+    {
+        "id": "10",
+        "title": "Buderus logano 25",
+        "image": "buderus_logano.jpg",
+        "description": "<strong>Потужність:</strong> 25кВт <br><strong>Матеріал:</strong> чугун <br><strong>Процес горіння</strong>: звичайний",
+        "price": 44999
     }
 ]

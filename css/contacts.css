@@ -17,11 +17,19 @@ body .container .btn-group{
 .card {
     height: 100%;
 }
+a {
+    color: #6c757d;
+    text-decoration: none;
+}
+a:hover {
+    color: #212529;
+    text-decoration: none;
+}
 
 /* Footer start*/
 footer .icon-sites a{
     text-decoration: none;  
-    color: #212529;
+    color: #2c2e30;
     font-weight: bold;
     font-size: 50px;
 } 
@@ -38,6 +46,7 @@ footer li a:hover{
     height: 50px;
 }
 footer {
+    background-color:  rgb(248, 249, 250);
     padding-top:15px;
     padding-bottom:15px;
     text-align: center;
@@ -64,6 +73,7 @@ footer div.icon-sites, #footer_menu, #footer_contacts{
     padding: 7px;
 }
 /* Footer end*/
+
 h1{
     font-size: 25px;
     text-align: center;

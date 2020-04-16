@@ -17,11 +17,19 @@ body .container .btn-group{
 .card {
     height: 100%;
 }
+a {
+    color: #6c757d;
+    text-decoration: none;
+}
+a:hover {
+    color: #212529;
+    text-decoration: none;
+}
 
 /* Footer start*/
 footer .icon-sites a{
     text-decoration: none;  
-    color: #212529;
+    color: #2c2e30;
     font-weight: bold;
     font-size: 50px;
 } 
@@ -38,6 +46,7 @@ footer li a:hover{
     height: 50px;
 }
 footer {
+    background-color:  rgb(248, 249, 250);
     padding-top:15px;
     padding-bottom:15px;
     text-align: center;
@@ -64,3 +73,37 @@ footer div.icon-sites, #footer_menu, #footer_contacts{
     padding: 7px;
 }
 /* Footer end*/
+/* Card button*/
+
+.btn-primary {
+    background-color: #828486;
+    border-color: #828486;
+}
+.btn-primary:hover {
+    background-color: #424344;
+    border-color: #424344;
+
+}
+.btn-info {
+    color: #fff;
+    background-color: #e89d1d;
+    border-color: #e89d1d;
+}
+.btn-info:hover, .btn-info:active, .btn-info:focus {
+    background-color: #bb8324;
+    border-color: #bb8324;
+}
+.btn-info:focus  {
+    background-color: #bb8324;
+    border-color: #bb8324;
+}
+/* Card button*/
+.about-us {
+    background-color: #f8f9fa;
+
+}
+.about-us p {
+    text-align: justify;
+    background-color: #f8f9fa;
+
+}
