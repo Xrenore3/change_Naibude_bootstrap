@@ -49,6 +49,13 @@
         "price": 25999
     },
     {
+        "id": "11",
+        "title": "Protherm Ckat 12",
+        "image": "protherm.jpg",
+        "description": "<strong>Потужність:</strong> 12кВт <br><strong>Напруга:</strong> 220 В <br><strong>Номінальний струм</strong>: 40 А",
+        "price": 14999
+    },
+    {
         "id": "8",
         "title": "Atmos DC 28 S",
         "image": "atmos.jpg",

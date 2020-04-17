@@ -10,6 +10,10 @@ body {
     min-width: 580px;
     margin: auto;
 }
+.navbar-light .navbar-brand {
+    color: #e89d1d;
+    font-size: 30px;
+}
 .container nav  .navbar-brand{
     font-weight: bold;
 }
@@ -17,6 +21,7 @@ body {
     font-weight: normal;
     font-size: 15px; 
 }
+
 body .container .btn-group{
     padding-left: 0px;
     padding-right: 0px;
@@ -36,7 +41,7 @@ a:hover {
 /* Footer start*/
 footer .icon-sites a{
     text-decoration: none;  
-    color: #2c2e30;
+    color: #e89d1d;
     font-weight: bold;
     font-size: 50px;
 } 
