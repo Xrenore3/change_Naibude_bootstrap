@@ -12,7 +12,7 @@ class ProductList {
     let productListDomString = '';
     const products = await this.productService.getProducts();
     products.forEach(product => {
-      productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+      productListDomString += `<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product" id="${product.id}-anchor">
                     <img class="card-img-top" src="img/products/${product.image}" 
                         alt="${product.title}">
@@ -21,7 +21,7 @@ class ProductList {
                       <p class="card-text flex-fill">${product.description}</p>
                       <div class="d-flex justify-content-around">
                         <button class="btn btn-info" data-toggle="modal"
-                          data-target="#productInfoModal" data-id="${product.id}">Деталі
+                          data-target="#productInfoModal" data-id="${product.id}">Огляд
                         </button>
                         <button class="btn btn-primary buy" data-id="${product.id}">
                           ₴${product.price} - Купити
